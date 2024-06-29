@@ -6,9 +6,32 @@
     <title>Cart</title>
 </head>
     <body>
-        <button>Show quantity</button>
+        <button onclick="
+            console.log(`Cart Quantity :${cartQuantity}`);
+            ">Show quantity</button>
+        
+        <button onclick="
+            cartQuantity+=1; //cartQuantity++;
+            console.log(`Cart Quantity : ${cartQuantity}`);
+        ">Add to Cart</button>
+        
+        <button onclick="
+        cartQuantity+=2;
+        console.log(`Cart Quantity : ${cartQuantity}`);">+2</button>
+        
+        <button onclick="
+        cartQuantity+=3;
+        console.log(`Cart Quantity : ${cartQuantity}`);">+3</button>
+        
+        <button onclick="
+        cartQuantity=0;
+        console.log(`Cart Quantity : ${cartQuantity}`);"
+        >Reset Cart</button>
+
         <script>
-                
+            let cartQuantity=0; //camelcase (cart-Quantity)
+            const var1=5;
+            console.log(typeof var1);
         </script>
     </body>
 </html>
